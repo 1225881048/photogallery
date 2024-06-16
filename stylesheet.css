@@ -1,0 +1,303 @@
+/* Universal CSS Rules */
+
+:root {
+    background-color: #000;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+small {
+    font-size: 0.85em;
+}
+
+nav a {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 8px 0px;
+    color: #007d7b;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+header, main {
+    background-color: #fff;
+    color: #000;
+}
+
+nav, footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    padding: 25px 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4vw;
+    color: #fff;
+    padding: 25px 10px;
+}
+
+nav a:hover:not([href="#TKtop"]) {
+    background-color: #007d7b;
+}
+
+/* nav a:visited {
+    color: #c7c7c7;
+} */
+
+/* 
+
+Color Palette:
+
+#007d7b
+#000
+#fff
+
+*/
+
+/* Mobile-first design */
+
+figure {
+    width: 85%;
+    margin: 0 auto;
+    /* padding: 10px 20px; */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    /* margin: inherit; */
+    /* padding: 0; */
+    /* list-style: none; */
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ------------------------------Should this not use float to overlap the items? Should it use grid??????????------------------------------ */
+
+figure:nth-child(odd) div {
+    position: relative;
+    float: left;
+    left: 40%;
+    top: 85%;
+}
+
+figure:nth-child(even) div {
+    position: relative;
+    float: left;
+    left: 40%;
+    top: 7%;
+}
+
+figcaption {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------I just dont know about this area!!!!--------------------------------------------- */
+
+p, h2{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+h1, h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7vw;
+}
+
+#about h2 {
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+form {
+    margin-bottom: 70px;
+}
+
+form p {
+    display: none;
+}
+
+div label, div input {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+div input, div textarea {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 85%;
+    padding: 10px;
+    color: #007d7b;
+    font-weight: bold;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    height: 18px;
+    text-transform: uppercase;
+}
+
+label {
+    width: 85%;
+}
+
+button {
+    background-color: #007d7b;
+    color: #fff;
+    border: none;
+    padding: 10px 20%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    border-radius: 14px;
+}
+
+[href="#TKtop"] {
+    position:fixed;
+    bottom:10px;
+    right:-47px;
+    padding: 7px;
+    outline: #fff solid 2px;
+}
+
+[href="#TKtop"]::before {
+    content: "↑ ";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------Media queries----------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    p {
+        font-size: 1em;
+    }
+    
+    figcaption, label, input, small {
+        font-size: 1em;
+    }
+   
+    nav a {
+        font-size: 1em;
+    }
+    
+    h1 {
+        font-size: 2em;
+        text-align: left;
+        padding-left: 2px;
+    }
+   
+    h2 {
+        font-size: 1.7em;
+    }
+
+    body {
+        width: 70%;
+    }
+
+    nav {
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+
+    [href="#TKtop"] {
+        right:-40px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    figure {
+        width: 98%;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+    body {
+        /* width: 70%; */
+    }
+}
