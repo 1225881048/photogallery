@@ -32,6 +32,7 @@ h1 {
     margin: 0;
     padding: 8px 0px;
     color: #007d7b;
+    font-size: 8vw;
 }
 
 h2 {
@@ -57,12 +58,13 @@ nav ul {
     list-style: none;
     padding: 0px;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav div {
-    display: flex;
-    justify-content: space-evenly;
-}
+/* .topnav {
+    flex: 1;
+} */
 
 nav a {
     text-decoration: none;
@@ -97,16 +99,12 @@ Color Palette:
 figure {
     width: 85%;
     margin: 0 auto;
-    /* padding: 10px 20px; */
 }
 
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    /* margin: inherit; */
-    /* padding: 0; */
-    /* list-style: none; */
+    /* gap: 10px; */
 }
 
 img {
@@ -115,7 +113,7 @@ img {
 
 /* ------------------------------Should this not use float to overlap the items? Should it use grid??????????------------------------------ */
 
-figure:nth-child(odd) div {
+/* figure:nth-child(odd) div {
     position: relative;
     float: left;
     left: 40%;
@@ -127,14 +125,33 @@ figure:nth-child(even) div {
     float: left;
     left: 40%;
     top: 7%;
-}
+} */
 
 figcaption {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    color: #fff;
     font-weight: bold;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
+
+.bottomcap {
+    bottom: 30px;
+}
+
+.smalltopcap {
+    bottom: 185px
+}
+
+.largetopcap {
+    bottom: 425px;
+}
+
+.white {
+    color: #fff;
+}
+
 
 /* ---------------------------------------------I just dont know about this area!!!!--------------------------------------------- */
 
@@ -146,7 +163,6 @@ p, h2{
 h1, h2{
     text-align: center;
     text-transform: uppercase;
-    font-size: 7vw;
 }
 
 #about h2 {
@@ -208,6 +224,7 @@ button {
     right:-47px;
     padding: 7px;
     outline: #fff solid 2px;
+    /* flex: 0; */
 }
 
 [href="#TKtop"]::before {
@@ -244,8 +261,12 @@ button {
         font-size: 1em;
     }
     
-    figcaption, label, input, small {
+    label, input, small {
         font-size: 1em;
+    }
+
+    figcaption {
+        font-size: .7em;
     }
    
     nav a {
@@ -277,15 +298,13 @@ button {
 
     .gallery {
         grid-template-columns: 1fr 1fr;
-        gap: 5px;
-        padding: 5px;
+        column-gap: 10px;
+        padding: 0px 3px;
     }
 
     figure {
         width: 98%;
     }
-
-    
 }
 
 
