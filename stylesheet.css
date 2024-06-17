@@ -51,7 +51,7 @@ nav, footer {
 }
 
 nav {
-    padding: 25px 10px;
+    padding: 25px 0px;
 }
 
 nav ul {
@@ -141,11 +141,11 @@ figcaption {
 }
 
 .smalltopcap {
-    bottom: 185px
+    bottom: 87%;
 }
 
 .largetopcap {
-    bottom: 425px;
+    bottom: 95%;
 }
 
 .white {
@@ -287,11 +287,6 @@ button {
         width: 70%;
     }
 
-    nav {
-        padding-right: 25%;
-        padding-left: 25%;
-    }
-
     [href="#TKtop"] {
         right:-40px;
     }
@@ -316,7 +311,25 @@ button {
 
 
 @media screen and (min-width: 1000px) {
+    h1 {
+        padding-left: 5px;
+    }
+
+    nav ul {
+        justify-content: right;
+    }
+
     body {
-        /* width: 70%; */
+        width: 75%;
+        max-width: 1000px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+    }
+
+    figcaption {
+        font-size: .8em;
     }
 }
