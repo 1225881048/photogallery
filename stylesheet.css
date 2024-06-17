@@ -62,10 +62,6 @@ nav ul {
     justify-content: center;
 }
 
-/* .topnav {
-    flex: 1;
-} */
-
 nav a {
     text-decoration: none;
     font-weight: bold;
@@ -80,22 +76,6 @@ nav a:hover:not([href="#TKtop"]) {
     background-color: #007d7b;
 }
 
-/* nav a:visited {
-    color: #c7c7c7;
-} */
-
-/* 
-
-Color Palette:
-
-#007d7b
-#000
-#fff
-
-*/
-
-/* Mobile-first design */
-
 figure {
     width: 85%;
     margin: 0 auto;
@@ -104,28 +84,11 @@ figure {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    /* gap: 10px; */
 }
 
 img {
     max-width: 100%;
 }
-
-/* ------------------------------Should this not use float to overlap the items? Should it use grid??????????------------------------------ */
-
-/* figure:nth-child(odd) div {
-    position: relative;
-    float: left;
-    left: 40%;
-    top: 85%;
-}
-
-figure:nth-child(even) div {
-    position: relative;
-    float: left;
-    left: 40%;
-    top: 7%;
-} */
 
 figcaption {
     position: relative;
@@ -151,9 +114,6 @@ figcaption {
 .white {
     color: #fff;
 }
-
-
-/* ---------------------------------------------I just dont know about this area!!!!--------------------------------------------- */
 
 p, h2{
     padding-right: 8px;
@@ -224,7 +184,6 @@ button {
     right:-47px;
     padding: 7px;
     outline: #fff solid 2px;
-    /* flex: 0; */
 }
 
 [href="#TKtop"]::before {
@@ -232,27 +191,7 @@ button {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* -----------------------------------------------------------Media queries----------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -301,11 +240,6 @@ button {
         width: 98%;
     }
 }
-
-
-
-
-
 
 
 
